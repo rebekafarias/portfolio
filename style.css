@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root{
+    --color1: #9CD6F0;
+    --color2: #1E1E1E;
+    --color3: #46596F;
+    --color4: #46596F;
+    --color5: #fff;
+    --color6: #9CD6F0;
+    --color7: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color5);
+}
+
+body{
+    background-color: var(--color2);
+    background-size: 400%;
+    height: 100vh;
+    font-family: 'Poppins';
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color: var(--color4);
+    min-height: 50px;
+}
+
+.box-img-header{
+    height: 100%;
+}
+
+.img-logo{
+    height: 100%;
+    max-height: 60px;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: var(--color1);
+}
+
+.nav-links:hover{
+    color: #fff;
+    text-decoration: underline;
+    transition: .4s;
+}
+
+.box-btn-actions{
+    display: flex;
+    gap: 1rem;
+}
+
+:is(button,.link-action){
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-action{
+    background-color: transparent;
+    border: 1px solid var(--color1);
+    color: var(--color1);
+}
+
+.btn-action:hover{
+    background-color:  var(--color3);
+    border: 1px solid var(--color5);
+}
+
+.link-action{
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section{
+    padding: 4rem;
+}
+
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    min-height: 650px;
+    flex-wrap: wrap;
+}
+
+.first-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+h1{
+    font-size: 4rem;
+    letter-spacing: 8px;
+    color: var(--color1);
+}
+
+strong{
+    color: var(--color7);
+}
+
+.first-section p{
+    color: var(--color1);
+    letter-spacing: 1px;
+}
+
+.first-section button{
+    width: 200px;
+}
+
+.box-img-main{
+    max-width: 400px;
+    padding: 1rem;
+}
+
+.img-profile{
+    width: 100%;
+    border-radius: 50%;
+}
+
+:is(.second-section, .fourth-section){
+    background-color: var(--color3);
+    font-weight: bold ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.title{
+    color: var(--color6);
+    letter-spacing: 2px;
+}
+
+.second-section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.second-section p{
+    color: var(--color5);
+    letter-spacing: 2px;
+}
+
+.second-section p:hover{
+    color: #9CD6F0;
+    transition: .4s;
+    cursor: default;
+}
+
+.third-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.third-section > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.third-section > div p{
+    letter-spacing: 1px;
+    color: var(--color1);
+    text-align: center;
+}
+
+#my-projects-list{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#my-projects-list a{
+    text-decoration: none;
+    color: var(--color5);
+}
+
+#my-projects-list a:hover{
+    transition: .4s;
+    color: #9CD6F0;
+}
+
+:is(.img-profile,.img-who-am-i){
+    box-shadow: 6px 6px 6px 6px #080808;
+}
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.icon {
+    max-width: 40px;
+}
