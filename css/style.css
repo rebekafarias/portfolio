@@ -377,11 +377,11 @@ header .navbar ul li a:focus {
 
 @media (max-width: 1200px) {
     html {
-        font-size: 55%;
+        font-size: 50%;
     }
 
     .home {
-        padding: 1rem 4rem;
+        padding: 1rem 2rem;
     }
 }
 
